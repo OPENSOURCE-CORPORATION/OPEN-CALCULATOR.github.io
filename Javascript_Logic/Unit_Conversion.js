@@ -9,32 +9,25 @@
 // cg -> Centigrams
 // decig -> Decigrams
 // decag -> Deacgrams 
-// Hecg -> Hectograms
+// hecg -> Hectograms
 // met_Ton -> Metric tonnes
 // oun -> Ounces
 // stn -> Stone
-// Short tons (US)
-// Long tons (UK)
+// srt_Tn -> Short tons (US)
+// lng_Ton -> Long tons (UK)
 
-function Convert_weight_to_Specific(Input_Amount, Input_unit , Output_unit) 
-{
-    Conversion  = "Input_unit" + "Output_unit"
-    switch(Input_unit,Output_unit) {
-  case KG:
-    // code block
-    break;
-  case y:
-    // code block
-    break;
-  default:
-    // code block
-}
-    return p1 * p2;  
+function Convert_weight_to_Specific(Input_Amount, Input_unit, Output_unit) {
+  var units = ["kg", "gm", "mg", "lbs", "car", "cg", "decig", "decag", "hecg", "met_Ton", "oun", "stn", "srt_Ton", "lng_Ton"];
+  // To Get the conversion Factor b/w Units
+  var in_Kg = [1, 10 ^ 3, 10 ^ 6, 2.204623, 5000, 10 ^ 5, 10 ^ 4, 100, 10, 0.001, 35.27396, 0.157473, 0.001102, 0.000984]
+  var len = units.length;
+  console.log(len)
+  // for i in range()
+  //   return p1 * p2;  
 }
 
 // For all available units
-function Convert_weight_to_All(Input_Amount , Input_unit)
-{
-    
+function Convert_weight_to_All(Input_Amount, Input_unit) {
+
 }
 
